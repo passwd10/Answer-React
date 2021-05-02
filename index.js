@@ -1,22 +1,13 @@
-// const element = <h1 title="foo">Hello</h1>;
-// const container = document.getElementById("root");
-// ReactDOM.render(element, container);
+/** @jsx React.createElement */
 
-const element = {
-  type: "h1",
-  props: {
-    title: "foo",
-    children: "Hello",
-  }
-}
+import React from './React/index.js';
+
+const element = (
+  <div style="background: salmon">
+    <h1>Hello World</h1>
+    <h2 style="text-align:right">Answer React</h2>
+  </div>
+);
 
 const container = document.getElementById("root");
-
-const node = document.createElement(element.type);
-node["title"] = element.props.title;
-
-const text = document.createTextNode("");
-text["nodeValue"] = element.props.children;
-
-node.appendChild(text);
-container.appendChild(node);
+React.render(element, container);
