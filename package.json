@@ -1,0 +1,26 @@
+{
+  "name": "Answer-React",
+  "version": "1.0.0",
+  "description": "build my own react",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js --out-file output.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/passwd10/Answer-React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/passwd10/Answer-React/issues"
+  },
+  "homepage": "https://github.com/passwd10/Answer-React#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "@babel/preset-react": "^7.13.13"
+  }
+}
